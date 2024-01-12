@@ -42,7 +42,10 @@ public class Video extends ElementoMultimediale implements Riproducibile {
     public void play() {
         String repeated = new String(new char[this.volume]).replace("\0", "!");
         String repeatedDue = new String(new char[this.luminosita]).replace("\0", "*");
-        System.out.println(this.getTitolo() + repeated + repeatedDue);
+        for (int i = 0; i < Riproducibile.durata; i++) {
+            System.out.println(this.getTitolo() + repeated + repeatedDue);
+        }
+
 
     }
 
