@@ -1,6 +1,6 @@
 package it.epicode.week1.progetto;
 
-public class Video extends ElementoMultimediale implements Riproducibile, Illuminabile {
+public class Video extends ElementoMultimediale implements Riproducibile {
 
 
     private int volume;
@@ -12,27 +12,27 @@ public class Video extends ElementoMultimediale implements Riproducibile, Illumi
         this.luminosita = luminosita;
     }
 
-    @Override
+
     public void aumentaLuminosita() {
         this.luminosita++;
 
     }
 
-    @Override
+
     public void abbassaLuminosita() {
-    if(this.luminosita>0){
-        this.luminosita--;
-    }
+        if (this.luminosita > 0) {
+            this.luminosita--;
+        }
     }
 
-    @Override
+
     public void alzaVolume() {
-    this.volume++;
+        this.volume++;
     }
 
-    @Override
+
     public void abbassaVolume() {
-        if(this.volume>0){
+        if (this.volume > 0) {
             this.volume--;
         }
 
@@ -50,15 +50,10 @@ public class Video extends ElementoMultimediale implements Riproducibile, Illumi
         return volume;
     }
 
-    public void setVolume(int volume) {
-        this.volume = volume;
-    }
 
     public int getLuminosita() {
         return luminosita;
     }
 
-    public void setLuminosita(int luminosita) {
-        this.luminosita = luminosita;
-    }
+
 }

@@ -1,6 +1,8 @@
 package it.epicode.week1.progetto;
 
-public class Immagine extends ElementoMultimediale implements Illuminabile{
+public class Immagine extends ElementoMultimediale {
+
+
 
     private int luminosita;
 
@@ -12,15 +14,18 @@ public class Immagine extends ElementoMultimediale implements Illuminabile{
         String repeated = new String(new char[this.luminosita]).replace("\0", "*");
         System.out.println(getTitolo()+repeated);
     }
-    @Override
+
     public void aumentaLuminosita() {
         this.luminosita++;
     }
 
-    @Override
+
     public void abbassaLuminosita() {
     if(this.luminosita>0){
         this.luminosita--;
     }
+    }
+    public int getLuminosita() {
+        return luminosita;
     }
 }

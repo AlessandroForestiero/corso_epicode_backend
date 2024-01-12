@@ -2,10 +2,7 @@ package it.epicode.week1.progetto;
 
 public interface Riproducibile {
 
-    public void alzaVolume();
-
-    public void abbassaVolume();
-
+    public static final int durata=50;
     public void play();
 
 

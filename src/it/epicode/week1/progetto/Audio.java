@@ -13,17 +13,15 @@ public class Audio extends ElementoMultimediale implements Riproducibile {
         return volume;
     }
 
-    public void setVolume(int volume) {
-        this.volume = volume;
-    }
 
 
-    @Override
+
+
     public void alzaVolume() {
         this.volume++;
     }
 
-    @Override
+
     public void abbassaVolume() {
         if (this.volume > 0) {
             this.volume--;
