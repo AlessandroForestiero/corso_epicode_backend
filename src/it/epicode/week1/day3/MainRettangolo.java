@@ -1,4 +1,4 @@
-public class Main {
+public class MainRettangolo {
     public static void main(String[] args) {
         Rettangolo rettangolo = new Rettangolo(50, 100);
         stampaRettangolo(rettangolo);
